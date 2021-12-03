@@ -1,0 +1,12 @@
+[Unit]
+Description=run nesa server
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=10
+WorkingDirectory=/home/pi/nesa-exam-update-check/
+ExecStart=/usr/bin/python3 /home/pi/nesa-exam-update-check/server.py
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,7 @@
+[Unit]
+Description=run exam update
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/pi/nesa-exam-update-check/
+ExecStart=/usr/bin/python3 /home/pi/nesa-exam-update-check/nesa_checker.py

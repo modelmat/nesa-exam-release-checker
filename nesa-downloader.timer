@@ -1,0 +1,12 @@
+[Unit]
+Description=Run NESA exam update script every 30 minutes
+RefuseManualStart=no
+RefuseManualStop=no
+
+[Timer]
+Persistent=yes
+OnCalendar=*:15
+Unit=nesa-downloader.service
+
+[Install]
+WantedBy=default.target
